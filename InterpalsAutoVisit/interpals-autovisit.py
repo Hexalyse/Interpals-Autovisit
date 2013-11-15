@@ -14,11 +14,11 @@ import getpass
 MIN_DELAY_BETWEEN_PROFILE_VIEWS = 1
 MAX_DELAY_BETWEEN_PROFILE_VIEWS = 5
 DELAY_BETWEEN_RUNS = 30
-sex = 'female' # Possible values: 'male', 'female', or empty '' for both
-cont = 'NA' # Possible values: 'AF' (Africa) 'AS' (Asia), 'EU' (Europe)
+sex = '' # Possible values: 'male', 'female', or empty '' for both
+cont = '' # Possible values: 'AF' (Africa) 'AS' (Asia), 'EU' (Europe)
             #'NA' (North America), 'OC' (Oceania), 'SA' (South America)
 age1 = 18 # minimum age
-age2 = 34 # maximum age
+age2 = 38 # maximum age
 
 # We keep already visited profile in a file to avoid visiting
 # a profile multiple times on consecutive execution of this script
