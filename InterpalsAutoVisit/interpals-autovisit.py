@@ -22,6 +22,7 @@ age2 = 38 # maximum age
 
 # We keep already visited profile in a file to avoid visiting
 # a profile multiple times on consecutive execution of this script
+# YOU CAN DELETE THIS FILE IF YOU WANT TO VISIT EVERYBODY ONCE AGAIN
 visitedUsersFilename = "users_visited.txt"
 
 # Set this variable to True to output debug log,
