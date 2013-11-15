@@ -11,11 +11,9 @@ import getpass
 ##
 ## CONFIG VARIABLES : YOU CAN EDIT THESE VARIABLES TO CHANGE TIMER VALUES ##
 ##
-
 MIN_DELAY_BETWEEN_PROFILE_VIEWS = 1
 MAX_DELAY_BETWEEN_PROFILE_VIEWS = 5
 DELAY_BETWEEN_RUNS = 30
-
 sex = 'female' # Possible values: 'male', 'female', or empty '' for both
 cont = 'NA' # Possible values: 'AF' (Africa) 'AS' (Asia), 'EU' (Europe)
             #'NA' (North America), 'OC' (Oceania), 'SA' (South America)
@@ -29,7 +27,6 @@ visitedUsersFilename = "users_visited.txt"
 # Set this variable to True to output debug log,
 # or False for more concise output
 DEBUG = False
-
 ##
 ## END OF CONFIG VARIABLES
 ##
