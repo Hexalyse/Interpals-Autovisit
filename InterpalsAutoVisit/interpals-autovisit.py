@@ -43,7 +43,7 @@ login = raw_input('Username (mail): ')
 password = getpass.getpass('Password: ')
 payload = {'action': 'login',
            'login': login,
-           'auto_login' : '0',
+           'auto_login' : '1',
            'password': password}
 
 print "Logging in..."
