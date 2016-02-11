@@ -47,8 +47,8 @@ payload = {'action': 'login',
            'password': password}
 
 print "Logging in..."
-s.get("http://www.interpals.net/")
-r = s.post("http://www.interpals.net/login.php", data=payload)
+s.get("https://www.interpals.net/")
+r = s.post("https://www.interpals.net/login.php", data=payload)
 print "Logged in: Starting the dance \o/"
 time.sleep(2)
 #print r.headers
@@ -57,7 +57,7 @@ while True:
     runcount = 0
     if DEBUG:
         print "Fetching online users page..."
-    r = s.get("http://www.interpals.net/online.php?sex=%s&cont=%s&age1=%d&age2=%d" % (sex, cont, age1, age2))
+    r = s.get("https://www.interpals.net/online.php?sex=%s&cont=%s&age1=%d&age2=%d" % (sex, cont, age1, age2))
     data = r.text
     usernames = re.findall(r'<div class=\'online_prof\'><a href=\'([a-zA-Z0-9\-_]+)\'', data, re.M)
     for username in usernames:
@@ -66,7 +66,7 @@ while True:
                 print "Visiting profile of " + username + " (" + str(sessioncount) + ")"
             runcount += 1
             sessioncount += 1
-            r = s.get("http://www.interpals.net/" + username)
+            r = s.get("https://www.interpals.net/" + username)
             waitTime = random.randrange(MIN_DELAY_BETWEEN_PROFILE_VIEWS*10, MAX_DELAY_BETWEEN_PROFILE_VIEWS*10) / float(10)
             if DEBUG:
                 print "Waiting " + str(waitTime) + "s"
